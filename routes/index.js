@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/setTitle/:app', (req, res, next) => {
-  res.render('index', { title: req.app });
+  res.render('index', { title: `${req.params.app}` });
 });
 
 module.exports = router;
